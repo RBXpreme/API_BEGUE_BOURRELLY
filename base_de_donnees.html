@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Clash of Clans</title>
+    <link rel="stylesheet" type="text/css" href="./coc.css" />
+    <link href="https://fonts.cdnfonts.com/css/agencyfb-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gemseatrial" rel="stylesheet">
+</head>
+
+<body>
+    <!-- En-tête avec la bannière -->
+    <div class="encadrement">
+        <img class="bannière_img" src="./banniere.jpg">
+    </div>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="./accueil.html">ACCUEIL</a></li>
+            <li><a href="./recherche_joueurs.html">RECHERCHE DE JOUEURS</a></li>
+            <li><a href="./recherche_clans.html">RECHERCHE DE CLANS</a></li>
+            <li><a href="./base_de_donnees.html" style="background-color: #ffffff; color: #000000;">BASE DE DONNÉES</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <!-- Formulaire de sélection du joueur -->
+        <h2 for="selectTag">Sélectionnez le joueur :</h2>
+        <select id="selectTag" class="Bouton1"></select>
+        <button id="btnValider" class="Recherche1">Valider</button>
+
+        <!-- Conteneur pour afficher les informations du joueur -->
+        <div id="playerInfoContainer"></div>
+    </div>
+
+    <!-- Script JavaScript pour la gestion de la base de données -->
+    <script src="base_de_donnees.js"></script>
+
+</body>
+<!-- Pied de page -->
+<footer>
+    <small>Copyright © 2023 ClashOfClan.com. Tous droits réservés.</small>
+</footer>
+
+</html>

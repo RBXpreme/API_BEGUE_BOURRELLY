@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Clash of Clans</title>
+    <link rel="stylesheet" type="text/css" href="./coc.css" />
+    <link href="https://fonts.cdnfonts.com/css/agencyfb-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gemseatrial" rel="stylesheet">
+</head>
+
+<body>
+    <!-- En-tête avec la bannière -->
+    <div class="encadrement">
+        <img class="bannière_img" src="./banniere.jpg">
+    </div>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="./accueil.html">ACCUEIL</a></li>
+            <li><a href="./recherche_joueurs.html">RECHERCHE DE JOUEURS</a></li>
+            <li><a href="./recherche_clans.html" style="background-color: #ffffff; color: #000000;">RECHERCHE DE CLANS</a></li>
+            <li><a href="./base_de_donnees.html">BASE DE DONNÉES</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulaire pour saisir l'ID du clan -->
+    <form id="clanForm" class="Rclan">
+        <h2 for="clanId">ID du clan:</h2>
+        <input type="text" id="clanId" name="clanId" class="Bouton1">
+        <button type="submit" class="Recherche1">Rechercher</button>
+    </form>
+
+    <!-- Conteneur pour les informations du clan -->
+    <div class="info-container hidden" id="clanInfo">
+        <h2>Informations du clan</h2>
+        <!-- Le contenu sera ajouté dynamiquement par JavaScript -->
+    </div>
+
+    <!-- Conteneur pour la liste des membres du clan -->
+    <div class="info-container hidden" id="membersList">
+        <h2>Membres du clan</h2>
+        <!-- Le contenu sera ajouté dynamiquement par JavaScript -->
+    </div>
+
+    <!-- Script JavaScript pour la recherche de clans -->
+    <script src="recherche_clans.js"></script>
+
+</body>
+<!-- Pied de page -->
+<footer>
+    <small>Copyright © 2023 ClashOfClan.com. Tous droits réservés.</small>
+</footer>
+
+</html>

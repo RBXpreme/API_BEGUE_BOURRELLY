@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Clash of Clans</title>
+    <link rel="stylesheet" type="text/css" href="./coc.css" />
+    <link href="https://fonts.cdnfonts.com/css/agencyfb-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gemseatrial" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Structure principale de la page -->
+    <div class="encadrement">
+        <div class="left-band"></div>
+        <img class="bannière_img" src="./banniere.jpg">
+    </div>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="./accueil.html">ACCUEIL</a></li>
+            <li><a href="./recherche_joueurs.html" style="background-color: #ffffff; color: #000000;">RECHERCHE DE JOUEURS</a></li>
+            <li><a href="./recherche_clans.html">RECHERCHE DE CLANS</a></li>
+            <li><a href="./base_de_donnees.html">BASE DE DONNÉES</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulaire pour saisir l'ID du joueur -->
+    <form id="playerForm" class="player">
+        <div>
+            <h2 for="playerId">ID du joueur:</h2>
+            <input type="text" id="playerId" name="playerId" class="Bouton1">
+            <button type="submit" class="Recherche1">Rechercher</button>
+        </div>
+    </form>
+
+    <!-- Section pour afficher les informations du joueur -->
+    <div class="info-container hidden" id="playerInfo">
+        <h2>Informations du joueur</h2>
+        <div class="Cadre1">
+            <p>Nom : <span id="playerName"></span></p>
+            <p>Tag : <span id="playerTag"></span></p>
+            <p>Level : <span id="playerLevel"></span></p>
+            <p>Level de l'HDV : <span id="playerTHLevel"></span></p>
+            <p>Level de l'arme de l'HDV : <span id="playerTHWeaponLevel"></span></p>
+            <p>Trophées : <span id="playerTrophies"></span></p>
+            <p>Meilleurs trophées : <span id="playerBestTrophies"></span></p>
+        </div>
+        <!-- Ajoutez d'autres informations ici (xp, trophées, etc.) -->
+    </div>
+
+    <!-- Section pour afficher les informations du clan -->
+    <div class="info-container hidden" id="clanInfo">
+        <h2>Informations du clan</h2>
+        <p>Nom du clan : <span id="clanName"></span></p>
+        <p>ID du clan : <span id="clanId"></span></p>
+        <!-- Ajoutez d'autres informations du clan ici -->
+    </div>
+
+    <!-- Section pour afficher les informations de la ligue -->
+    <div class="info-container hidden" id="leagueInfo">
+        <h2>Informations de la ligue</h2>
+        <p>Nom de la ligue : <span id="leagueName"></span></p>
+        <img src="" alt="Icone de la ligue" class="league-icon" id="leagueIcon">
+        <!-- Ajoutez d'autres informations sur la ligue ici -->
+    </div>
+
+    <!-- Sections pour afficher les niveaux des troupes, des héros et des sorts -->
+    <div class="info-container hidden" id="troopsInfo">
+        <!-- Conteneur pour les niveaux des troupes -->
+        <h2>Niveaux des troupes du joueur</h2>
+        <!-- Le contenu sera ajouté dynamiquement par JavaScript -->
+    </div>
+
+    <div class="info-container hidden" id="heroesInfo">
+        <!-- Conteneur pour les niveaux des héros -->
+        <h2>Niveaux des héros du joueur</h2>
+        <!-- Le contenu sera ajouté dynamiquement par JavaScript -->
+    </div>
+
+    <div class="info-container hidden" id="spellsInfo">
+        <!-- Conteneur pour les niveaux des sorts -->
+        <h2>Niveaux des sorts du joueur</h2>
+        <!-- Le contenu sera ajouté dynamiquement par JavaScript -->
+    </div>
+
+    <script src="recherche_joueurs.js"></script>
+</body>
+<!-- Pied de page -->
+<footer>
+    <small>Copyright © 2023 ClashOfClan.com. Tous droits réservés.</small>
+</footer>
+
+
+</html>
